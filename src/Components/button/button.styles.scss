@@ -1,0 +1,12 @@
+.button-container {
+	margin-top: 1em;
+	height: 3em;
+	border-radius: .5em;
+	border: none;
+	background-color: #FFEBD3;
+
+	&:hover {
+		cursor: pointer;
+		background-color: #FFA740;
+	}
+}

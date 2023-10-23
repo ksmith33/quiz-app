@@ -12,7 +12,10 @@ import Settings from './Routes/settings/settings.component'
 import Category from './Routes/category/category.component'
 import Quiz from './Routes/quiz/quiz.component'
 
+//need to add protected route
+//add header
 const router = createBrowserRouter([
+	
 	{
 		path: "/",
 		element: <Dashboard />
@@ -37,7 +40,6 @@ const router = createBrowserRouter([
 		path: "/quiz/:quizId",
 		element: <Quiz/>
 	}
-	
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

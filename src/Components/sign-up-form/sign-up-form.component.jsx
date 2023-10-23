@@ -3,13 +3,14 @@ import { useState } from 'react';
 import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
 
-function SignInForm () {
+function SignUpForm () {
 	const [formFields, setFormFields] = useState({
 		email: "",
-		password: ""
+		password: "",
+		confirmPassword: ""
 	});
 
-	const { email, password } = formFields;
+	const { email, password, confirmPassword } = formFields;
 
 	function handleChange (event) {
 		const { name, value } = event.target;
@@ -21,19 +22,13 @@ function SignInForm () {
 		resetFormFields();
 	}
 
-	function handleGoogleSignIn () {
-		//firebase google sign in
-		resetFormFields();
-	}
-
 	function resetFormFields() {
-		setFormFields({ email: "", password: "" });
+		setFormFields({ email: "", password: "", confirmPassword: "" });
 	}
-
 
 	return (
 		<AuthForm onSubmit={ handleSubmit }>
-			<h2>Sign In</h2>
+			<h2>Sign Up</h2>
 			<FormInput
 				label='Email'
 				placeholder='email'
@@ -56,12 +51,22 @@ function SignInForm () {
 				value={ password }
 			/>
 
+			<FormInput
+				label="Confirm Password"
+				placeholder='confirm password'
+				type='password'
+				required
+				onChange={ handleChange }
+				name='confirmPassword'
+				id='confirmPassword'
+				value={ confirmPassword }
+			/>
+
 			<div className='buttons'>
-				<Button type='submit'>Sign In</Button>
-				<Button type='button' onClick={ handleGoogleSignIn }>Sign In With Google</Button>
+				<Button type='submit'>Sign Up</Button>
 			</div>
 		</AuthForm>
 	)
 }
 
-export default SignInForm;
+export default SignUpForm;
