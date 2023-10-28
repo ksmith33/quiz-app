@@ -3,7 +3,7 @@ import './auth-form.styles.scss';
 function AuthForm ({ children, onSubmit }) {
 
 	return (
-		<form onSubmit={ onSubmit } className='sign-in-container'>
+		<form onSubmit={ onSubmit } className='auth-form-container'>
 			{ children }
 		</form>
 	)

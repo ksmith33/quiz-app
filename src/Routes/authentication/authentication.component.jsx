@@ -5,6 +5,7 @@ import './authentication.styles.scss';
 function Authentication () {
 	return (
 		<main className="auth-container">
+			<h1>Placeholder</h1>
 			<SignInForm />
 			<SignUpForm />
 		</main>

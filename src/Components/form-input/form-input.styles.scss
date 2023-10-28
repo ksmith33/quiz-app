@@ -1,6 +1,13 @@
+@mixin shrinkLabel {
+  top: -1.2em;
+  font-size: .75rem;
+  color: black;
+}
+
 .form-input-container {
+	position: relative;
 	width: 100%;
-	margin-top: 1em;
+	margin-top: 1.5em;
 
 	input {
 		width: 100%;
@@ -8,10 +15,24 @@
 		border-radius: .5em;
 		border: solid .1em rgb(191, 191, 191);
 		padding: .5em;
+
+		&:focus ~ .auth-label {
+			@include shrinkLabel();
+		}
 	}
 }
 
 .auth-label {
 	display: block;
+	position: absolute;
+	left: .5em;
+	top: .5em;
+	color: rgb(180, 180, 180);
+	transition: 300ms ease all;
+	pointer-events: none;
+
+	&.shrink {
+		@include shrinkLabel();
+	}
 }
 

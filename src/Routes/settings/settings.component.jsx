@@ -1,5 +1,7 @@
+import './settings.styles.scss';
+
 function Settings () {
-	return(
+	return (
 		<h1>Settings</h1>
 	)
 }

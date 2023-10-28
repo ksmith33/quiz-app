@@ -36,7 +36,6 @@ function SignInForm () {
 			<h2>Sign In</h2>
 			<FormInput
 				label='Email'
-				placeholder='email'
 				type='email'
 				required
 				onChange={ handleChange }
@@ -47,7 +46,6 @@ function SignInForm () {
 
 			<FormInput
 				label="Password"
-				placeholder='password'
 				type='password'
 				required
 				onChange={ handleChange }
