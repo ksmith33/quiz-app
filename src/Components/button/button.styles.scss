@@ -1,12 +1,35 @@
 .button-container {
-	margin-top: 1em;
 	height: 3em;
 	border-radius: .5em;
 	border: none;
-	background-color: #FFEBD3;
 
-	&:hover {
-		cursor: pointer;
-		background-color: #FFA740;
+	&.auth {
+		background-color: #FFEBD3;
+		margin-bottom: 1em;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #FFA740;
+		}
 	}
+
+	&.settings {
+		background-color: #D3ECFF;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #8eb3d0;
+		}
+	}
+
+	&.delete {
+		background-color: #C51D1D;
+		color: white;
+
+		&:hover{
+			cursor: pointer;
+			background-color: #a81919;
+		}
+	}
+
 }

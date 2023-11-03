@@ -55,8 +55,8 @@ function SignInForm () {
 			/>
 
 			<div className='buttons'>
-				<Button type='submit'>Sign In</Button>
-				<Button type='button' onClick={ handleGoogleSignIn }>Sign In With Google</Button>
+				<Button type='submit' buttonType='auth'>Sign In</Button>
+				<Button type='button' onClick={ handleGoogleSignIn } buttonType='auth'>Sign In With Google</Button>
 			</div>
 		</AuthForm>
 	)

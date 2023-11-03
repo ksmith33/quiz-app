@@ -1,7 +1,5 @@
 .topic-container {
-	width: 100%;
-	height: 100%;
-	box-shadow: 0em .5em .5em rgba(0, 0, 0, 0.116);
+	box-shadow: 0em .1em .1em rgba(0, 0, 0, 0.329);
 	border-radius: 1em;
 	padding: 2em 4em;
 	text-align: center;
@@ -9,5 +7,10 @@
 	img {
 		height: 90%;
 		width: 100%;
+	}
+
+	&:hover {
+		padding: 1em 3em;
+		transition: 300ms ease all;
 	}
 }

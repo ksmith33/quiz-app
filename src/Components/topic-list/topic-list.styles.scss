@@ -1,10 +1,8 @@
 .topics-container {
 	list-style: none;
 	display: grid;
-	grid-template-columns: repeat(2, 35em);
-	grid-gap: 5em;
-	grid-auto-rows: 30em;
-	align-items: center;
-	justify-content: center;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 30em;
+	grid-gap: 10em;
 	margin: 0;
 }

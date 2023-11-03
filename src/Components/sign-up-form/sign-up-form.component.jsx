@@ -60,7 +60,7 @@ function SignUpForm () {
 			/>
 
 			<div className='buttons'>
-				<Button type='submit'>Sign Up</Button>
+				<Button type='submit' buttonType='auth'>Sign Up</Button>
 			</div>
 		</AuthForm>
 	)

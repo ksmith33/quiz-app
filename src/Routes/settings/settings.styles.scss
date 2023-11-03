@@ -1,0 +1,26 @@
+.settings-container {
+	display: grid;
+	grid-template-areas: "sidebar sec1" 
+												". sec2"
+												". sec3";
+	grid-template-columns: 10em 1fr;
+	grid-gap: .5em;
+	padding: 1em;					
+}
+
+.sec-1 {
+	grid-area: sec1;
+}
+
+.sec-2 {
+	grid-area: sec2;
+}
+
+.sec-3 {
+	grid-area: sec3;
+}
+
+.sidebar-container {
+	grid-area: sidebar;
+}
+

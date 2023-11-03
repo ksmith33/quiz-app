@@ -1,0 +1,23 @@
+.sidebar-container {
+	a {
+		display: block;
+		text-decoration: none;
+		color: black;
+
+		&:hover {
+			background-color: #FFEBD3;;
+		}
+
+		padding: .5em 1em;
+		margin: .5em;
+		border-radius: 1em;
+	}
+
+	box-shadow: 0em .1em .1em rgba(0, 0, 0, 0.329);
+	border-radius: 1em;
+	text-align: center;
+}
+
+.selected {
+	background-color: #FFEBD3;
+}
